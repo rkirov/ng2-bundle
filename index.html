@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://jspm.io/system@0.16.js"></script>
+    <script src="bundle/angular2.dev.js"></script>
+  </head>
+  <body>
+    <script>
+      System.config({
+        paths: {
+          '*': '*.js',
+          'angular2/*': 'angular2/*',
+        },
+        traceurOptions: {
+          annotations: true,
+          types: true
+        }
+      });
+      System.import('main');
+    </script>
+    <cmp></cmp>
+  </body>
+</html>
+
