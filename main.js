@@ -1,4 +1,12 @@
-import {Component, Template, bootstrap} from 'angular2/angular2';
+import {bootstrap} from 'angular2/angular2';
+import {Inject} from 'angular2/di';
+import {Component, Template} from 'decorators';
+
+class Service {
+  greeting() {
+    return 'hello';
+  }
+}
 
 @Component({
   selector: 'cmp',
@@ -8,15 +16,11 @@ import {Component, Template, bootstrap} from 'angular2/angular2';
   inline: '{{greeting}} world!'
 })
 class Cmp {
-  constructor(service: Service) {
+  constructor(service) {
     this.greeting = service.greeting();
   }
 }
-
-class Service {
-  greeting() {
-    return 'hello';
-  }
-}
+// currently no sugar for this with decorators.
+Cmp.parameters = [[Service]];
 
 bootstrap(Cmp);
