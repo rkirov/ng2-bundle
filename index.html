@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
   <head>
+    <script src="Reflect.js"></script>
+    <script src="https://github.jspm.io/jmcriffey/bower-traceur-runtime@0.0.87/traceur-runtime.js"></script>
     <script src="https://jspm.io/system@0.16.js"></script>
     <script src="bundle/angular2.dev.js"></script>
   </head>
@@ -10,10 +12,6 @@
         paths: {
           '*': '*.js',
           'angular2/*': 'angular2/*',
-        },
-        traceurOptions: {
-          annotations: true,
-          types: true
         }
       });
       System.import('main');
