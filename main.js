@@ -1,6 +1,6 @@
 import {bootstrap} from 'angular2/angular2';
 import {Inject} from 'angular2/di';
-import {Component, Template} from 'decorators';
+import {Component, View} from 'decorators';
 
 class Service {
   greeting() {
