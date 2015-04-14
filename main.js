@@ -1,11 +1,11 @@
-import {Component, Template, bootstrap} from 'angular2/angular2';
+import {Component, View, bootstrap} from 'angular2/angular2';
 
 @Component({
   selector: 'cmp',
-  services: [Service]
+  injectables: [Service]
 })
-@Template({
-  inline: '{{greeting}} world!'
+@View({
+  template: '{{greeting}} world!'
 })
 class Cmp {
   constructor(service: Service) {
