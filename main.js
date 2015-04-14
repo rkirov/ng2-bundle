@@ -10,10 +10,10 @@ class Service {
 
 @Component({
   selector: 'cmp',
-  services: [Service]
+  injectables: [Service]
 })
-@Template({
-  inline: '{{greeting}} world!'
+@View({
+  template: '{{greeting}} world!'
 })
 class Cmp {
   constructor(service) {
