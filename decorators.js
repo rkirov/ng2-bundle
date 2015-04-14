@@ -17,4 +17,4 @@ function makeDecorator(annotationCls) {
 
 export const Decorator = makeDecorator(ng.Decorator);
 export const Component = makeDecorator(ng.Component);
-export const Template = makeDecorator(ng.Template);
+export const View = makeDecorator(ng.View);

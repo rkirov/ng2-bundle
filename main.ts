@@ -1,5 +1,5 @@
 import {bootstrap} from 'angular2/angular2';
-import {Component, Template} from 'decorators';
+import {Component, View} from 'decorators';
 
 class Service {
   greeting() {
@@ -9,10 +9,10 @@ class Service {
 
 @Component({
   selector: 'cmp',
-  services: [Service]
+  injectables: [Service]
 })
-@Template({
-  inline: '{{greeting}} world!'
+@View({
+  template: '{{greeting}} world!'
 })
 class Cmp {
   greeting: string;
