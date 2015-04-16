@@ -1,0 +1,23 @@
+{
+  "name": "angular2_bundle",
+  "version": "1.0.0",
+  "description": "This repo shows how to consume an angular2 system.js dev mode bundle along with an app written in TS.",
+  "main": "main.js",
+  "dependencies": {
+    "reflect-metadata": "0.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rkirov/ng2-bundle.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rkirov/ng2-bundle/issues"
+  },
+  "homepage": "https://github.com/rkirov/ng2-bundle"
+}
