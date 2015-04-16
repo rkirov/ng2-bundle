@@ -1,1 +1,1 @@
-tsc main.ts -m amd -t ES5 --emitDecoratorMetadata
+node typescript/bin/tsc.js main.ts -m system -t ES5 --emitDecoratorMetadata
