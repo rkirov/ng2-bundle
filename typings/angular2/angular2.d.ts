@@ -4,8 +4,6 @@ interface Type {}
 
 declare module "angular2/angular2" {
   function bootstrap(appComponentType: any): void;
-}
-declare module "decorators" {
   function Component({
     selector,
     properties,
